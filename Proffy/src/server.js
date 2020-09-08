@@ -10,17 +10,6 @@ const proffys = [
         weekday: [0],
         time_from: [720],
         time_to: [1220]
-    },
-    {
-        name: "Diego Fernandes",
-        avatar: "https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4",
-        whatsapp: "99123456789",
-        bio: "Entusiasta das melhores tecnologias de química avançada.",
-        subject: "Química",
-        cost: "20",
-        weekday: [1],
-        time_from: [720],
-        time_to: [1220]
     }
 ]
 
@@ -79,7 +68,7 @@ function pageGiveClasses(req, res) {
     return res.redirect("/study")
 }
 
-//Se não mostrar...
+//Se não mostrar
     return res.render("give-classes.html", {subjects, weekdays})
 }
 
@@ -87,7 +76,7 @@ function pageGiveClasses(req, res) {
 const express = require('express')
 const server = express()
 
-// Configurações do nunjucks
+//Configurações do nunjucks
 const nunjucks = require('nunjucks')
 nunjucks.configure('src/views', {
     express: server,
